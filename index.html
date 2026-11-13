@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>अपना शाहडोल | Shahdol Tourism</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.7;
+}
+
+header{
+    background:#124e36;
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+}
+
+header h1{
+    font-size:38px;
+}
+
+nav{
+    background:#092f23;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:8px 12px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.hero{
+    height:420px;
+    background:linear-gradient(#0008,#0008),
+    url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h2{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:45px 0;
+}
+
+.heading{
+    text-align:center;
+    font-size:30px;
+    color:#124e36;
+    margin-bottom:25px;
+}
+
+.info{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px #0002;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 12px #0002;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+}
+
+.card img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:18px;
+}
+
+.card h3{
+    color:#124e36;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:15px;
+}
+
+ul{
+    padding-left:25px;
+}
+
+footer{
+    background:#092f23;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer a{
+    color:#ffd166;
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:27px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    nav a{
+        display:inline-block;
+        font-size:13px;
+        margin:5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>अपना शाहडोल</h1>
+    <p>मध्य प्रदेश की शान और हमारी पहचान</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#home">होम</a>
+    <a href="#about">परिचय</a>
+    <a href="#history">इतिहास</a>
+    <a href="#places">प्रसिद्ध जगहें</a>
+    <a href="#culture">संस्कृति</a>
+    <a href="#food">खानपान</a>
+    <a href="#contact">संपर्क</a>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <div>
+        <h2>स्वागत है शाहडोल में</h2>
+        <p>प्रकृति, इतिहास और संस्कृति का सुंदर संगम</p>
+    </div>
+</div>
+
+<div class="container">
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="heading">शाहडोल का परिचय</h2>
+
+    <div class="info">
+        <p>
+        शाहडोल मध्य प्रदेश के पूर्वी भाग में स्थित एक
+        प्रमुख शहर और जिला मुख्यालय है। शाहडोल अपनी
+        प्राकृतिक सुंदरता, जंगलों, खनिज संपदा,
+        ऐतिहासिक स्थलों और धार्मिक परंपराओं के लिए
+        प्रसिद्ध है।
+        </p>
+        <br>
+        <p>
+        यहाँ हिंदी और बघेली भाषा बोली जाती है।
+        यह क्षेत्र अपनी आदिवासी संस्कृति और
+        पारंपरिक जीवनशैली के लिए भी जाना जाता है।
+        </p>
+        <br>
+        <p><b>राज्य:</b> मध्य प्रदेश</p>
+        <p><b>जिला:</b> शाहडोल</p>
+        <p><b>क्षेत्र:</b> बघेलखंड</p>
+        <p><b>मुख्य भाषा:</b> हिंदी और बघेली</p>
+    </div>
+</section>
+
+<!-- HISTORY -->
+<section id="history">
+    <h2 class="heading">शाहडोल का इतिहास</h2>
+
+    <div class="info">
+        <p>
+        शाहडोल का इतिहास प्राचीन काल से जुड़ा हुआ है।
+        यह क्षेत्र ऐतिहासिक बघेलखंड का हिस्सा रहा है।
+        यहाँ कलचुरी और बघेल राजवंशों का प्रभाव रहा है।
+        </p>
+        <br>
+        <p>
+        शाहडोल के आसपास कई प्राचीन मंदिर और
+        ऐतिहासिक स्थल हैं। विराटेश्वर मंदिर यहाँ की
+        प्राचीन वास्तुकला का महत्वपूर्ण उदाहरण है।
+        </p>
+    </div>
+</section>
+
+<!-- TOURIST PLACES -->
+<section id="places">
+    <h2 class="heading">शाहडोल की प्रसिद्ध जगहें</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81" alt="मंदिर">
+            <div class="card-content">
+                <h3>1. विराटेश्वर मंदिर</h3>
+                <p>
+                सोहागपुर स्थित भगवान शिव का प्राचीन
+                मंदिर अपनी कलचुरी कालीन वास्तुकला
+                और सुंदर नक्काशी के लिए प्रसिद्ध है।
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="प्राकृतिक दृश्य">
+            <div class="card-content">
+                <h3>2. सरसी आइलैंड</h3>
+                <p>
+                बाणसागर जलाशय के क्षेत्र में स्थित
+                यह स्थान प्राकृतिक सुंदरता और
+                शांत वातावरण के लिए प्रसिद्ध है।
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9" alt="जलाशय">
+            <div class="card-content">
+                <h3>3. बाणसागर बांध</h3>
+                <p>
+                सोन नदी पर बना यह विशाल बांध
+                सिंचाई और जलविद्युत उत्पादन के
+                लिए महत्वपूर्ण है।
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="धार्मिक स्थल">
+            <div class="card-content">
+                <h3>4. कंकाली मंदिर</h3>
+                <p>
+                अंतरा गाँव का प्रसिद्ध धार्मिक स्थल।
+                यहाँ श्रद्धालु माता के दर्शन के लिए
+                आते हैं।
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="पहाड़">
+            <div class="card-content">
+                <h3>5. घाटी डोंगरी</h3>
+                <p>
+                पहाड़ी क्षेत्र और प्राकृतिक वातावरण
+                के लिए जाना जाने वाला स्थान।
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027" alt="प्रकृति">
+            <div class="card-content">
+                <h3>6. क्षीर सागर</h3>
+                <p>
+                प्राकृतिक सुंदरता और शांत वातावरण
+                के लिए जाना जाने वाला स्थान।
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7" alt="मंदिर">
+            <div class="card-content">
+                <h3>7. पंचमठा मंदिर</h3>
+                <p>
+                सिंहपुर क्षेत्र का धार्मिक और
+                ऐतिहासिक महत्व वाला मंदिर।
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604608672516-5c4f6f3d1c14" alt="मंदिर">
+            <div class="card-content">
+                <h3>8. भाठिया देवी मंदिर</h3>
+                <p>
+                माँ सिंहवाहिनी को समर्पित
+                प्रसिद्ध धार्मिक स्थल।
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- NEARBY PLACES -->
+<section>
+    <h2 class="heading">शाहडोल के आसपास घूमने की जगहें</h2>
+
+    <div class="info">
+        <ul>
+            <li><b>अमरकंटक:</b> नर्मदा नदी का उद्गम स्थल और प्रसिद्ध तीर्थ स्थान।</li>
+            <li><b>बांधवगढ़ राष्ट्रीय उद्यान:</b> बाघों और वन्यजीवों के लिए प्रसिद्ध।</li>
+            <li><b>संजय राष्ट्रीय उद्यान:</b> जंगल और वन्यजीवों का सुंदर क्षेत्र।</li>
+            <li><b>अनूपपुर:</b> प्राकृतिक और धार्मिक स्थलों के लिए प्रसिद्ध।</li>
+            <li><b>उमरिया:</b> बांधवगढ़ और प्राकृतिक पर्यटन के लिए जाना जाता है।</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CULTURE -->
+<section id="culture">
+    <h2 class="heading">शाहडोल की संस्कृति</h2>
+
+    <div class="info">
+        <p>
+        शाहडोल की संस्कृति में बघेली लोक संस्कृति
+        और आदिवासी परंपराओं का विशेष महत्व है।
+        यहाँ पारंपरिक लोकगीत, नृत्य और त्योहार
+        उत्साह से मनाए जाते हैं।
+        </p>
+        <br>
+        <ul>
+            <li>दीपावली</li>
+            <li>होली</li>
+            <li>दशहरा</li>
+            <li>नवरात्रि</li>
+            <li>आदिवासी पारंपरिक त्योहार</li>
+        </ul>
+    </div>
+</section>
+
+<!-- FOOD -->
+<section id="food">
+    <h2 class="heading">शाहडोल का खानपान</h2>
+
+    <div class="info">
+        <p>
+        शाहडोल का खानपान स्थानीय परंपराओं और
+        ग्रामीण जीवनशैली से जुड़ा हुआ है।
+        </p>
+        <br>
+        <ul>
+            <li>कुटकी की खीर</li>
+            <li>रसाज कढ़ी</li>
+            <li>स्थानीय अनाज के व्यंजन</li>
+            <li>पारंपरिक ग्रामीण भोजन</li>
+        </ul>
+    </div>
+</section>
+
+<!-- TRANSPORT -->
+<section>
+    <h2 class="heading">शाहडोल कैसे पहुँचें?</h2>
+
+    <div class="info">
+        <p><b>रेल मार्ग:</b> शाहडोल रेलवे स्टेशन से कई प्रमुख शहरों के लिए रेल संपर्क उपलब्ध है।</p>
+        <p><b>सड़क मार्ग:</b> बस और निजी वाहनों से शाहडोल पहुँचा जा सकता है।</p>
+        <p><b>हवाई मार्ग:</b> यात्रा के अनुसार निकटवर्ती हवाई अड्डे का चुनाव किया जा सकता है।</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="heading">हमारे बारे में</h2>
+
+    <div class="info">
+        <p>
+        इस वेबसाइट का उद्देश्य शाहडोल के इतिहास,
+        संस्कृति, पर्यटन और प्रसिद्ध जगहों की
+        जानकारी लोगों तक पहुँचाना है।
+        </p>
+        <br>
+        <p><b>वेबसाइट:</b> अपना शाहडोल</p>
+        <p><b>स्थान:</b> शाहडोल, मध्य प्रदेश, भारत</p>
+    </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <h2>अपना शाहडोल ❤️</h2>
+    <p>हमारा शहर, हमारी पहचान</p>
+    <p>© 2026 Apna Shahdol | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
